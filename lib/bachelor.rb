@@ -26,7 +26,7 @@ full_name=''
       details_hash.each do |key,value|
         if value == occupation
           full_name = data [season_data][0]["name"]
-          binding.pry
+          # binding.pry
         end
       end
     end
