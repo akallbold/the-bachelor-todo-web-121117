@@ -54,7 +54,7 @@ def get_occupation(data, hometown)
     details_array.each_with_index do |details_hash,i|
       details_hash.each do |key,value|
         if value == hometown
-            job= data [season_data][i]["occupation"]
+            job = data [season_data][i]["occupation"]
         end
       end
     end
