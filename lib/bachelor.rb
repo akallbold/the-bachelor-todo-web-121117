@@ -50,11 +50,14 @@ end
 
 def get_occupation(data, hometown)
   job = ""
+  stop= false
+
   data.each do |season_data,details_array|
     details_array.each_with_index do |details_hash,i|
       details_hash.each do |key,value|
-        if value == hometown
+        if value == hometown && stop == false
             job = data [season_data][i]["occupation"]
+            stop = true
         end
       end
     end
