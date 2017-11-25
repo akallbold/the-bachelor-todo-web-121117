@@ -25,7 +25,7 @@ full_name=''
     details_array.each do |details_hash|
       details_hash.each do |key,value|
         if value == occupation
-          full_name = data [season_data][details_array][details_hash]["name"]
+          full_name = data [season_data][0]["name"]
           binding.pry
         end
       end
